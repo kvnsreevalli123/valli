@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cout<<"enter no of subjects\t";
+	cin>>n;
+	int mark[n];
+	for(i=0;i<n;i++)
+	{
+		cout<<"marks in sub"<<i+1;
+		cin>>mark[i];
+		cout<<endl;
+	}
+int sum=0;
+for(i=0;i<n;i++)
+{
+sum+=mark[i];		
+}
+cout<<"sum"<<sum<<endl;
+int avg;
+avg=sum/n;
+if(avg>=90)
+{
+	cout<<"grade is\t";
+cout<<"s grade";
+}
+else if(avg<=90&&avg>=80)
+{
+	cout<<"grade is\t";
+cout<<"a++ grade";
+}
+else if(avg<=80&&avg>=70)
+{
+	cout<<"grade is\t";
+cout<<"a grade";
+}
+else if(avg<=70&&avg>=60)
+{
+	cout<<"grade is\t";
+cout<<"b grade";
+}
+else if(avg<=60&&avg>=50)
+{
+	cout<<"grade is\t";
+		cout<<"c grade";
+}
+else
+{cout<<"fail";
+}return 0;
+}
